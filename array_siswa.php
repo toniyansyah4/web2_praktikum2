@@ -15,6 +15,9 @@
                         <th>Nilai UAS</th>
                         <th>Nilai Tugas</th>
                         <th>Nilai Akhir</th>
+                        <th>Grade</th>
+                        <th>Predikat</th>
+                        <th>Kelulusan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,6 +35,9 @@
                             <td><?= $datas['uas'] ?></td>
                             <td><?= $datas['nilai_tugas'] ?></td>
                             <td><?= number_format($nilai_akhir, 2, ',', '.') ?></td>
+                            <td><?php grade($nilai_akhir) ?></td>
+                            <td><?php predikat($nilai_akhir) ?></td>
+                            <td><?php kelulusan($nilai_akhir) ?></td>
                         </tr>
                         </tr>
                     <?php } ?>

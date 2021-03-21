@@ -19,11 +19,11 @@ $data = [
     ],
     [
         "nim" => 3242,
-        "nama" => "Toniyansyah Wahyudi",
-        "matkul" => "Basis Data",
-        "uts" => 80,
-        "uas" => 86,
-        "nilai_tugas" => 83,
+        "nama" => "Joko",
+        "matkul" => "WEB",
+        "uts" => 10,
+        "uas" => 10,
+        "nilai_tugas" => 12,
     ],
     [
         "nim" => 021212,
@@ -42,6 +42,7 @@ $data = [
         "nilai_tugas" => $nilai_tugas,
     ],
 ];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,6 +74,7 @@ $data = [
             include "form_nilai.php";
             break;
         case '':
+            require_once 'libfungsi.php';
             include "array_siswa.php";
             break;
     }
