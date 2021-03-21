@@ -2,25 +2,18 @@
 
 function grade($nilai_akhir)
 {
-    switch ($nilai_akhir) {
-        case ($nilai_akhir >= 0) && ($nilai_akhir <= 35):
-            print("E");
-            break;
-        case ($nilai_akhir >= 36) && ($nilai_akhir <= 55):
-            print("D");
-            break;
-        case ($nilai_akhir >= 56) && ($nilai_akhir <= 69):
-            print("C");
-            break;
-        case ($nilai_akhir >= 70) && ($nilai_akhir <= 84):
-            print("B");
-            break;
-        case ($nilai_akhir >= 85) && ($nilai_akhir <= 100):
-            print("A");
-            break;
-        case ($nilai_akhir < 0) && ($nilai_akhir > 100):
-            print("I");
-            break;
+    if (($nilai_akhir >= 0) && ($nilai_akhir <= 35)) {
+        return print("E");
+    } else if (($nilai_akhir >= 36) && ($nilai_akhir <= 55)) {
+        return print("D");
+    } else if (($nilai_akhir >= 56) && ($nilai_akhir <= 69)) {
+        return print("C");
+    } else if (($nilai_akhir >= 70) && ($nilai_akhir <= 84)) {
+        return print("B");
+    } else if (($nilai_akhir >= 85) && ($nilai_akhir <= 100)) {
+        return print("A");
+    } else if (($nilai_akhir < 0) && ($nilai_akhir > 100)) {
+        return print("I");
     }
 }
 
